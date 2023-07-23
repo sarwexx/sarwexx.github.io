@@ -1,0 +1,193 @@
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/storeCSS.css);
+
+.panels-3wFtMD:not(:hover) > :not(:last-child), .panels-3wFtMD:not(:hover) > .wrapper-3Hk90B ~ div {
+    padding: 0;
+    overflow: hidden;
+    height: 0;
+    min-height: 0
+}
+
+.userPanelOuter-XfFELn {
+  --profile-gradient-secondary-color: rgba(0,0,0,0) !important;
+  --profile-gradient-primary-color: rgba(0,0,0,0) !important;
+  --profile-gradient-overlay-color: rgba(0,0,0,0) !important;
+  --profile-body-background-hover: rgba(0,0,0,0) !important;
+}
+
+/* ------------------ COLLAPSING SERVER LIST ------------------ */
+.wrapper-1_HaEi {
+  width: 10px;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 1px;
+}
+.wrapper-1_HaEi {
+  justify-content: space-between;
+  max-width: 8px !important;
+  overflow: hidden;
+  transition-property: max-width;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+}
+.wrapper-1_HaEi:hover {
+  max-width: 48px !important;
+}
+
+.wrapper-1_HaEi {
+  width: 1000px;
+}
+/* ----------------------------------------------------------- */
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
+
+/* enterprise */
+[class^="panels-3wFtMD"]::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    left: 175px;
+    margin-top: -60px;
+    position: absolute;
+    background-image: url('https://cdn.discordapp.com/emojis/585585249036271658.gif?size=60&quality=lossless');
+}
+
+/* ------------------- COLLAPSING USER LIST ------------------- */
+.membersWrap-3NUR2t {
+  min-width: unset;
+}
+.membersWrap-3NUR2t .members-3WRCEx {
+  max-width: 65px;
+  min-width: 65px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.membersWrap-3NUR2t .members-3WRCEx:hover {
+  max-width: 240px;
+  min-width: 240px;
+}
+.membersWrap-3NUR2t .members-3WRCEx .content-2a4AW9:not(:hover) {
+  padding-top: 10px;
+}
+/* ----------------------------------------------------------- */
+
+/* end pride month early */
+img[src^="https://cdn.discordapp.com/icons/1015060230222131221/"] {
+  content: url(https://media.discordapp.net/attachments/991818193935024229/1113878714015559750/8Jfw9g9.png);
+}
+[style*="https://cdn.discordapp.com/icons/1015060230222131221/"] {
+  background-image: url(https://media.discordapp.net/attachments/991818193935024229/1113878714015559750/8Jfw9g9.png) !important;
+}
+
+.membersGroup-2eiWxl {
+  margin-left: 60px;
+}
+
+.members-3WRCEx,
+.members-3WRCEx > div {
+}
+
+
+
+
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
+
+/* Messages Slide In Chat */
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.message-2CShn3 {
+  animation: slide-up 0.4s ease;
+}
+
+/* Unclamp the About Me section, so it's not limited to just 6 lines. (normally it cuts off at 6 and adds a ...) */
+.lineClamp2Plus-2RYGV2{
+    -webkit-line-clamp: 190; /*Maximum amount of characters as new lines, unset just breaks links*/
+    max-height:112px;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+.lineClamp2Plus-2RYGV2::-webkit-scrollbar {
+  width: 5px;
+  height: 15px;
+}
+.lineClamp2Plus-2RYGV2::-webkit-scrollbar-track {
+  border-radius: 5px; /*How round you want the scrollbar to be. 0 is square, 10px is round.*/
+  background-color: rgb(255 255 255 / 10%); /*Edit this to what color you want the track to be.*/
+}
+.lineClamp2Plus-2RYGV2::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #00aeff, #00aeff); /* Edit this to whatever color/colors you'd like*/
+  border-radius: 5px; /*How round you want the scrollbar thumb to be. 0 is square, 10px is round.*/
+}
+
+.container-YkUktl {
+  height: auto !important;
+  padding: 12px 16px;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 1px;
+}
+.container-YkUktl > div:nth-child(2), #vc-spotify-player > div.vc-spotify-button-row, .container-1zzFcN > div:nth-child(2){
+  justify-content: space-between;
+  max-height: 0;
+  overflow: hidden;
+  transition-property: max-height;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+}
+.container-YkUktl:hover > div:nth-child(2), #vc-spotify-player:hover > div.vc-spotify-button-row, .container-1zzFcN:hover > div:nth-child(2) {
+  max-height: 32px;
+}
+
+.theme-dark #vc-spotify-player {
+    background: none !important;
+}
+
+#vc-spotify-progress-bar>[class^=slider] [class^=grabber] {
+    margin-top: 4px;
+}
+
+.theme-dark .container-1zzFcN {
+    margin-top: 5px;
+}
+
+/* consistent member since */
+.userInfoSection-3her-v>h3 {
+   color: var(--header-secondary);
+   margin-top: 16px;   
+}
+
+/* floating user panel */
+.panels-3wFtMD {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  border: 1px solid var(--background-secondary);
+  border-radius: 10px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.45);
+}
+
+/* favorites icon */
+.favoriteIcon-2kWmTP > path {
+    d: path("M16.44 3.10156C14.63 3.10156 13.01 3.98156 12 5.33156C10.99 3.98156 9.37 3.10156 7.56 3.10156C4.49 3.10156 2 5.60156 2 8.69156C2 9.88156 2.19 10.9816 2.52 12.0016C4.1 17.0016 8.97 19.9916 11.38 20.8116C11.72 20.9316 12.28 20.9316 12.62 20.8116C15.03 19.9916 19.9 17.0016 21.48 12.0016C21.81 10.9816 22 9.88156 22 8.69156C22 5.60156 19.51 3.10156 16.44 3.10156Z");
+    transform: scale(1.1) translate(-1.5px, -1px);
+    transition: all 0.2s ease-in-out;
+}
+.wrapper-3kah-n.selected-1Drb7Z[aria-label*="Fav"] .favoriteIcon-2kWmTP path {
+    fill: #F62B30;
+}
+.wrapper-3kah-n.selected-1Drb7Z[aria-label*="Fav"] .childWrapper-1j_1ub::after {
+    background-color: #F62B30;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    filter: blur(10px);
+    opacity: 0.4;
+}
