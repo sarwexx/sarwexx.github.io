@@ -1,5 +1,5 @@
 const API_URL = 'https://api.lanyard.rest/v1';
-const USERID = '304313130115137539';
+const USERID = '387175954558222336';
 const pfp = document.getElementById('pfp');
 const pfp2 = document.getElementById('pfp2');
 const status = document.getElementById('status');
