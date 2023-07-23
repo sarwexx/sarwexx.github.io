@@ -307,12 +307,21 @@ li {
 
 .bottomright {
     position: fixed;
+	opacity: 0.5;
     right: 0px; bottom: 0px;
-    width: 42px;
-    height: 42px;
+	color: #FFFFFF;
+	text-decoration: none;
+	border:none;
+    width: 145px;
+    height: 28px;
     padding: 5px;
     cursor: pointer;
 }
+
+a {
+    text-decoration: none !important;
+	color: white; 
+}	
 
 .topright {
     position: fixed;
