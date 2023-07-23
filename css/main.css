@@ -321,7 +321,56 @@ li {
 a {
     text-decoration: none !important;
 	color: white; 
-}	
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: auto;
+  height: auto;
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+/* Video Styling */
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .topright {
     position: fixed;

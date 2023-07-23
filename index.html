@@ -102,9 +102,32 @@
                 </div>
             </div>
         </div>
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <video id="modalVideo" loop>
+                <source src="woof.mp4" type="video/mp4">
+                <!-- Add other video formats for cross-browser compatibility -->
+                <!-- <source src="your_video.webm" type="video/webm"> -->
+                <!-- <source src="your_video.ogv" type="video/ogg"> -->
+                Your browser does not support the video tag.
+              </video>
+            </div>
+        </div>
         <div class="bottomright">
             <a href="https://itzpeto.com/">Website by ItzPeto</a>
         </div>
+        <script>
+            document.getElementById('pfp').addEventListener('click', function() {
+                document.getElementById('videoModal').style.display = 'block';
+                document.getElementById('modalVideo').play();
+            });
+    
+            document.getElementsByClassName('close')[0].addEventListener('click', function() {
+                document.getElementById('videoModal').style.display = 'none';
+                document.getElementById('modalVideo').pause();
+            });
+        </script>
         <footer>
             <script src="js/script.js"></script>
         </footer>
