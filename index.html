@@ -106,11 +106,7 @@
             <div class="modal-content">
               <span class="close">&times;</span>
               <video id="modalVideo" loop>
-                <source src="woof.mp4" type="video/mp4">
-                <!-- Add other video formats for cross-browser compatibility -->
-                <!-- <source src="your_video.webm" type="video/webm"> -->
-                <!-- <source src="your_video.ogv" type="video/ogg"> -->
-                Your browser does not support the video tag.
+
               </video>
             </div>
         </div>
@@ -118,11 +114,22 @@
             <a href="https://itzpeto.com/">Website by ItzPeto</a>
         </div>
         <script>
+            var videos = [
+                'assets/woof.mp4',
+                'assets/cirno.mp4'
+            ];
+
+            var video = document.querySelector('video');
+            var source = document.createElement('source');
+
+            source.setAttribute('src', videos[Math.floor(Math.random() * videos.length)]);
+            video.appendChild(source);
+
             document.getElementById('pfp').addEventListener('click', function() {
                 document.getElementById('videoModal').style.display = 'block';
                 document.getElementById('modalVideo').play();
             });
-    
+            
             document.getElementsByClassName('close')[0].addEventListener('click', function() {
                 document.getElementById('videoModal').style.display = 'none';
                 document.getElementById('modalVideo').pause();
