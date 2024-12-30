@@ -197,7 +197,7 @@
   "background": {
     "blur": 3,
     "url": "https://raw.githubusercontent.com/sarwexx/sarwexx.github.io/refs/heads/main/assets/20241015_153348.webp",
-    "alpha": 0.03
+    "alpha": 200
   },
   "spec": 2
 }
